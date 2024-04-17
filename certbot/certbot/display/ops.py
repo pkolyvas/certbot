@@ -161,7 +161,7 @@ def _sort_names(FQDNs: Iterable[str]) -> List[str]:
     :returns: Sorted list of domain names
     :rtype: list
     """
-    return sorted(FQDNs, key=lambda fqdn: fqdn.split('.')[::-1][1:])
+    return sorted(FQDNs, key=lambda fqdn: fqdn.split('.')[1:])
 
 
 def _filter_names(names: Iterable[str],
